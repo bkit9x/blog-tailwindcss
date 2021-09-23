@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+
+<body>
+    <div class="flex min-h-screen bg-gray-100 dark:bg-gray-900">
+        <!-- sidebar -->
+        <div class="flex flex-row min-h-screen hidden lg:block w-74">
+            <nav
+                class="shadow-lg bg-gradient-to-l from-gray-50 to-gray-100  dark:from-gray-800 dark:to-gray-900 w-full min-h-screen justify-between flex flex-col">
+                <!-- sidebar top -->
+                <div class="mt-10 mb-10 text-blue-600">
+                    <a href="#"
+                        class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mb-3 mx-auto" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- /sidebar top -->
+                <!-- sidebar middle -->
+                <div class="my-auto">
+                    <div class="content-center text-blue-500 dark:text-blue-300 mx-auto">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                                    <span class="h-6 w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-auto" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                                    <span class="h-6 w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                                    <span class="h-6 w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-auto" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                                    <span class="h-6 w-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <!-- darkMode -->
+                            <li>
+                                <a href="#"
+                                    class="block mt-1 text-center p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200"
+                                    id="darkMode">
+                                    <span class="h-6 w-6" id="darkModeIcon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /sidebar middle -->
+                <!-- sidebar bottom -->
+                <div class="mb-4">
+                    <a href="#"
+                        class="block text-center text-indigo-800 dark:text-purple-300 p-3 rounded-xl mx-2 hover:text-blue-800 hover:scale-x-110 transform hover:shadow-xl dark:hover:text-white transition-colors duration-200">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <!-- /sidebar bottom -->
+            </nav>
+        </div>
+        <!-- /sidebar -->
+
+        <!-- container -->
+        <div class="container max-h-screen flex flex-col">
+            <!-- header -->
+            <header
+                class="w-full shadow-lg bg-gradient-to-r from-white to-gray-100  dark:from-gray-800 dark:to-gray-900 items-center h-16">
+                <div class="relative z-20 flex flex-col justify-center h-full sm:px-3 mx-auto flex-center">
+                    <div class="relative items-center sm:pl-1 flex w-full lg:max-w-full sm:pr-0 sm:ml-0">
+                        <!-- logo -->
+                        <div class="relative p-1 flex items-center justify-start w-2/6 lg:w-1/6 ml-5 sm:ml-0 ">
+                            <a href="#" class="inline-block relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:text-gray-400" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="relative text-blue-800 text-lg font-extrabold ml-4 dark:text-blue-200 inline-block sm:hidden">
+                                HK
+                            </a>
+                            <a href="#"
+                                class="relative text-blue-800 text-lg font-extrabold ml-4 dark:text-blue-200 hidden sm:inline-block">
+                                Hoàng Kha
+                            </a>
+                        </div>
+
+                        <!-- search -->
+                        <div class="container relative left-0 z-50 flex w-3/6 lg:w-4/6 h-auto h-full justify-between">
+                            <div class="relative flex items-center w-full lg:w-96 h-full group">
+                                <!-- icon search -->
+                                <svg class="absolute left-0 z-20 hidden w-4 h-4 ml-4 text-gray-500 pointer-events-none fill-current group-hover:text-gray-400 sm:block"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path
+                                        d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z">
+                                    </path>
+                                </svg>
+                                <input type="text"
+                                    class="block w-full py-1.5 pl-10 pr-4 leading-normal rounded-2xl focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500  ring-opacity-90 bg-gray-200 dark:bg-gray-800 dark:focus:ring-blue-900 text-gray-400 aa-input"
+                                    placeholder="Search" />
+                            </div>
+                        </div>
+                        <div class="relative p-1 flex items-center justify-end w-1/6 ml-5 mr-4 sm:mr-0 sm:right-auto">
+                            <a href="#" class="block relative">
+                                <img alt="profil" src="dist/img/avatar.jpg"
+                                    class="mx-auto object-cover rounded-full h-10 w-10 " />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- /navigation -->
+
+            <!-- main -->
+            <main class="w-full p-3 overflow-auto">
+
+                <div class="header flex items-end justify-between mb-2">
+                    <div class="title">
+                        <p class="text-2xl font-bold text-gray-800 mb-4">
+                            Lastest articles
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                    Video
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    Work at home
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    Work at home, remote, is the new age of the job, every person can work at
+                                    home....
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                    Oui
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    test
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    The new supercar is here, 543 cv and 140 000$ !!
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                    Oui
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    test
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    The new supercar is here, 543 cv and 140 000$ !!
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    test
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    The new supercar is here, 543 cv and 140 000$ !!
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    test
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    The new supercar is here, 543 cv and 140 000$ !!
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="dist/img/image.jpg" class="max-h-40 w-full object-cover" />
+                            <div class="bg-white dark:bg-gray-800 w-full p-4">
+                                <p class="text-indigo-500 text-md font-medium">
+                                    Oui
+                                </p>
+                                <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+                                    test
+                                </p>
+                                <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+                                    The new supercar is here, 543 cv and 140 000$ !!
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="block relative">
+                                        <img alt="profil" src="dist/img/avatar.jpg"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-4 text-sm">
+                                        <p class="text-gray-800 dark:text-white">
+                                            Jean Jacques
+                                        </p>
+                                        <p class="text-gray-400 dark:text-gray-300">
+                                            20 mars 2029 - 6 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </main>
+            <!-- /main -->
+
+            <!-- footer -->
+            <!-- <footer class="w-full shadow-lg bg-gray-200 items-center h-10 flex flex-row items-center justify-center">
+                <a href="#">Nguyễn Hoàng Kha</a>
+            </footer> -->
+            <!-- /footer -->
+
+        </div>
+        <!-- /container -->
+    </div>
+</body>
+<script src="dist/darkMode.js"></script>
+
+</html>
